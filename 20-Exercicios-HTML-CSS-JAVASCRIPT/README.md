@@ -228,7 +228,7 @@ Este exercício utiliza o cálculo de posicionamento de rolagem da janela para a
 
 Passos:
 
-1. **Estrutura HTML (index.html)**: Crie uma página com um texto longo (vários parágrafos para permitir rolagem). No topo da página, crie um contêiner para a barra de progresso com uma <div> interna vazia.
+1. **Estrutura HTML (index.html)**: Crie uma página com um texto longo (vários parágrafos para permitir rolagem). No topo da página, crie um contêiner para a barra de progresso com uma `<div>` interna vazia.
 
 2. **Estilização CSS (style.css)**: Fixe o contêiner no topo da tela (position: fixed; top: 0; left: 0; width: 100%;). Dê à barra interna uma cor de destaque, altura pequena (ex: 5px) e largura inicial de 0%.
 
@@ -283,7 +283,7 @@ Este exercício utiliza expressões regulares simples (RegEx) para analisar stri
 
 Passos:
 
-1. **Estrutura HTML (index.html)**: Crie um formulário com um campo de senha (`<input type="password">`). Abaixo do campo, crie uma <div> vazia que servirá de barra indicadora de força e um texto auxiliar.
+1. **Estrutura HTML (index.html)**: Crie um formulário com um campo de senha (`<input type="password">`). Abaixo do campo, crie uma `<div>` vazia que servirá de barra indicadora de força e um texto auxiliar.
 
 2. **Estilização CSS (style.css)**: Crie uma barra base com largura total e fundo cinza. A barra interna de força deve ter transição suave de largura e cor.
 
