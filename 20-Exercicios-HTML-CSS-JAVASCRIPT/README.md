@@ -1,4 +1,4 @@
-## 20 Exercícios de Criação de Páginas com HTML, CSS e JavaScript
+## 30 Exercícios de Criação de Páginas com HTML, CSS e JavaScript
 
 #### 1. Criador de Cartão de Perfil Interativo
 
@@ -204,9 +204,9 @@ Este exercício aborda a criação de um modal (*pop-up*) que bloqueia a intera�
 #### 21. Conversor de Moedas com Taxas Fixas
 Este exercício foca em capturar valores numéricos de formulários, realizar operações matemáticas básicas e formatar a saída de dados.
 
-**Passos**:
+**Passos:**
 
-1. Estrutura HTML (index.html): Crie um campo de entrada numérico (<input type="number">) para o valor em Reais (BRL). Adicione um elemento de seleção (<select>) com opções de moedas de destino (ex: Dólar, Euro). Adicione um botão "Converter" e um elemento de texto para o resultado.
+1.  **Estrutura HTML (index.html)**: Crie um campo de entrada numérico (`<input type="number">`) para o valor em Reais (BRL). Adicione um elemento de seleção (`<select>`) com opções de moedas de destino (ex: Dólar, Euro). Adicione um botão "Converter" e um elemento de texto para o resultado.
 
 2. **Estilização CSS (style.css)**: Estilize o formulário de conversão de maneira limpa, destacando o campo de resultado.
 
@@ -217,96 +217,96 @@ Este exercício trabalha fortemente com matrizes ou arrays de estado, detecção
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie um contêiner principal para o tabuleiro e, dentro dele, 9 elementos individuais (ex: <div>) representando as casas do jogo. Adicione uma área de texto para indicar o jogador da vez ("Vez do X" ou "Vez do O") e um botão de reiniciar.
+1. **Estrutura HTML (index.html)**: Crie um contêiner principal para o tabuleiro e, dentro dele, 9 elementos individuais (ex: `<div>`) representando as casas do jogo. Adicione uma área de texto para indicar o jogador da vez ("Vez do X" ou "Vez do O") e um botão de reiniciar.
 
-**Estilização CSS (style.css)**: Use CSS Grid no contêiner para criar uma grade de 3x3. Estilize as casas com bordas nítidas, tamanho fixo e cursor de clique.
+2. **Estilização CSS (style.css)**: Use CSS Grid no contêiner para criar uma grade de 3x3. Estilize as casas com bordas nítidas, tamanho fixo e cursor de clique.
 
-**Funcionalidade JavaScript (script.js)**: Crie um array de 9 posições para rastrear o estado do tabuleiro e uma variável para o jogador atual ("X"). Adicione ouvintes de clique nas casas. Ao clicar em uma casa vazia, preencha-a com o símbolo atual, atualize o array de estado e verifique se há uma combinação vencedora (linhas, colunas ou diagonais). Se houver, declare o vencedor; caso contrário, alterne o turno.
+3. **Funcionalidade JavaScript (script.js)**: Crie um array de 9 posições para rastrear o estado do tabuleiro e uma variável para o jogador atual ("X"). Adicione ouvintes de clique nas casas. Ao clicar em uma casa vazia, preencha-a com o símbolo atual, atualize o array de estado e verifique se há uma combinação vencedora (linhas, colunas ou diagonais). Se houver, declare o vencedor; caso contrário, alterne o turno.
 
 #### 23. Barra de Progresso de Leitura
 Este exercício utiliza o cálculo de posicionamento de rolagem da janela para atualizar uma propriedade visual em tempo real.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie uma página com um texto longo (vários parágrafos para permitir rolagem). No topo da página, crie um contêiner para a barra de progresso com uma <div> interna vazia.
+1. **Estrutura HTML (index.html)**: Crie uma página com um texto longo (vários parágrafos para permitir rolagem). No topo da página, crie um contêiner para a barra de progresso com uma <div> interna vazia.
 
-**Estilização CSS (style.css)**: Fixe o contêiner no topo da tela (position: fixed; top: 0; left: 0; width: 100%;). Dê à barra interna uma cor de destaque, altura pequena (ex: 5px) e largura inicial de 0%.
+2. **Estilização CSS (style.css)**: Fixe o contêiner no topo da tela (position: fixed; top: 0; left: 0; width: 100%;). Dê à barra interna uma cor de destaque, altura pequena (ex: 5px) e largura inicial de 0%.
 
-**Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento ao objeto window para o evento scroll. Calcule a porcentagem da página que já foi rolada dividindo a posição atual do scroll (window.scrollY) pela altura total rolável do documento minus a altura da janela. Use essa porcentagem para atualizar dinamicamente a propriedade width da barra interna.
+3. **Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento ao objeto window para o evento scroll. Calcule a porcentagem da página que já foi rolada dividindo a posição atual do scroll (window.scrollY) pela altura total rolável do documento minus a altura da janela. Use essa porcentagem para atualizar dinamicamente a propriedade width da barra interna.
 
 #### 24. Acordeão de Perguntas Frequentes (FAQ Accordion)
 Este exercício foca na manipulação de elementos irmãos (sibling elements) e animações de expansão de altura.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie uma lista de perguntas e respostas. Cada item deve ter um cabeçalho (a pergunta) e um painel de conteúdo (a resposta).
+1. **Estrutura HTML (index.html)**: Crie uma lista de perguntas e respostas. Cada item deve ter um cabeçalho (a pergunta) e um painel de conteúdo (a resposta).
 
-**Estilização CSS (style.css)**: Defina o painel de resposta com display: none; por padrão ou use propriedades de altura (height: 0; overflow: hidden;) combinado com transition para permitir efeitos suaves.
+2. **Estilização CSS (style.css)**: Defina o painel de resposta com display: none; por padrão ou use propriedades de altura (height: 0; overflow: hidden;) combinado com transition para permitir efeitos suaves.
 
-**Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento de clique em todos os cabeçalhos de pergunta. Ao clicar em uma pergunta, verifique se o painel de resposta correspondente está aberto. Se estiver fechado, abra-o (e feche todos os outros painéis de resposta ativos na página).
+3. **Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento de clique em todos os cabeçalhos de pergunta. Ao clicar em uma pergunta, verifique se o painel de resposta correspondente está aberto. Se estiver fechado, abra-o (e feche todos os outros painéis de resposta ativos na página).
 
 #### 25. Calculadora de IMC com Feedback Visual
 Este exercício exercita condicionais baseadas em faixas numéricas e manipulação de classes CSS para fornecer respostas visuais personalizadas.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie dois campos de entrada numérica: um para o peso (kg) e outro para a altura (metros). Adicione um botão "Calcular" e uma área de texto para o resultado e a classificação.
+1. **Estrutura HTML (index.html)**: Crie dois campos de entrada numérica: um para o peso (kg) e outro para a altura (metros). Adicione um botão "Calcular" e uma área de texto para o resultado e a classificação.
 
-**Estilização CSS (style.css)**: Crie classes de cores diferentes para os resultados (ex: verde para peso normal, amarelo para sobrepeso, vermelho para obesidade).
+2. **Estilização CSS (style.css)**: Crie classes de cores diferentes para os resultados (ex: verde para peso normal, amarelo para sobrepeso, vermelho para obesidade).
 
-**Funcionalidade JavaScript (script.js)**: Adicione um ouvinte ao botão para efetuar o cálculo matemático do IMC (peso dividido pelo quadrado da altura). Utilize uma estrutura de if / else if para classificar o resultado obtido de acordo com as faixas padrão da OMS e mude a classe do elemento de resultado para a cor correspondente à classificação da pessoa.
+3. **Funcionalidade JavaScript (script.js)**: Adicione um ouvinte ao botão para efetuar o cálculo matemático do IMC (peso dividido pelo quadrado da altura). Utilize uma estrutura de if / else if para classificar o resultado obtido de acordo com as faixas padrão da OMS e mude a classe do elemento de resultado para a cor correspondente à classificação da pessoa.
 
 #### 26. Filtro de Busca em Lista Textual (Live Search)
 Este exercício aprimora a busca dinâmica comparando strings em tempo real à medida que o usuário digita.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie um campo de entrada de texto para a pesquisa e uma lista simples (<ul> com vários <li>) contendo nomes de itens variados (ex: frutas, países ou filmes).
+1. **Estrutura HTML (index.html)**: Crie um campo de entrada de texto para a pesquisa e uma lista simples (`<ul>` com vários `<li>`) contendo nomes de itens variados (ex: frutas, países ou filmes).
 
-**Estilização CSS (style.css)**: Estilize a lista para uma leitura confortável e aplique efeitos visuais simples ao passar o mouse.
+2. **Estilização CSS (style.css)**: Estilize a lista para uma leitura confortável e aplique efeitos visuais simples ao passar o mouse.
 
-**Funcionalidade JavaScript (script.js)**: Adicione o evento input ou keyup no campo de busca. Na função associada, pegue o termo digitado, transforme-o em letras minúsculas e itere pelos itens da lista. Utilize funções de string (como includes()) para testar se o texto do item contém o termo digitado. Se não contiver, esconda o item aplicando uma classe ou alterando seu estilo diretamente.
+3. **Funcionalidade JavaScript (script.js)**: Adicione o evento input ou keyup no campo de busca. Na função associada, pegue o termo digitado, transforme-o em letras minúsculas e itere pelos itens da lista. Utilize funções de string (como includes()) para testar se o texto do item contém o termo digitado. Se não contiver, esconda o item aplicando uma classe ou alterando seu estilo diretamente.
 
 #### 27. Botão de Curtir com Contador de Estados
 Este exercício simula o comportamento comum de curtidas em redes sociais, trabalhando com variáveis booleanas e incrementos simples.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie um contêiner representando uma postagem genérica. Dentro dele, adicione um botão de curtir (que pode conter texto ou um caractere representando um coração) e um elemento de texto indicando o número de curtidas (ex: "0 curtidas").
+1. **Estrutura HTML (index.html)**: Crie um contêiner representando uma postagem genérica. Dentro dele, adicione um botão de curtir (que pode conter texto ou um caractere representando um coração) e um elemento de texto indicando o número de curtidas (ex: "0 curtidas").
 
-**Estilização CSS (style.css)**: Crie um estilo específico para quando o botão estiver no estado "curtido" (ex: mudando o fundo para azul ou vermelho).
+2. **Estilização CSS (style.css)**: Crie um estilo específico para quando o botão estiver no estado "curtido" (ex: mudando o fundo para azul ou vermelho).
 
-**Funcionalidade JavaScript (script.js)**: Crie uma variável para contar o número de curtidas e uma variável booleana para registrar se o usuário atual já curtiu ou não o post. No clique do botão, faça a verificação: se o usuário ainda não curtiu, incremente o contador, marque a booleana como verdadeira e adicione a classe visual de curtido ao botão. Se ele clicar novamente, execute a ação inversa (decremento e remoção da classe).
+3. **Funcionalidade JavaScript (script.js)**: Crie uma variável para contar o número de curtidas e uma variável booleana para registrar se o usuário atual já curtiu ou não o post. No clique do botão, faça a verificação: se o usuário ainda não curtiu, incremente o contador, marque a booleana como verdadeira e adicione a classe visual de curtido ao botão. Se ele clicar novamente, execute a ação inversa (decremento e remoção da classe).
 
 #### 28. Medidor de Força de Senha em Tempo Real
 Este exercício utiliza expressões regulares simples (RegEx) para analisar strings e atualizar componentes visuais dinamicamente.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie um formulário com um campo de senha (<input type="password">). Abaixo do campo, crie uma <div> vazia que servirá de barra indicadora de força e um texto auxiliar.
+1. **Estrutura HTML (index.html)**: Crie um formulário com um campo de senha (`<input type="password">`). Abaixo do campo, crie uma <div> vazia que servirá de barra indicadora de força e um texto auxiliar.
 
-**Estilização CSS (style.css)**: Crie uma barra base com largura total e fundo cinza. A barra interna de força deve ter transição suave de largura e cor.
+2. **Estilização CSS (style.css)**: Crie uma barra base com largura total e fundo cinza. A barra interna de força deve ter transição suave de largura e cor.
 
-**Funcionalidade JavaScript (script.js)**: Monitore o campo de senha com o evento input. Crie uma pontuação inicial de força igual a zero. Estabeleça testes na string da senha usando regras ou expressões regulares (ex: se contém mais de 8 caracteres, adicione +1 ponto; se contém números, +1 ponto; se contém caracteres especiais, +1 ponto; se contém letras maiúsculas, +1 ponto). Use a pontuação final para definir a largura (ex: 25%, 50%, 75%, 100%) e a cor da barra (vermelho, laranja, amarelo, verde).
+3. **Funcionalidade JavaScript (script.js)**: Monitore o campo de senha com o evento input. Crie uma pontuação inicial de força igual a zero. Estabeleça testes na string da senha usando regras ou expressões regulares (ex: se contém mais de 8 caracteres, adicione +1 ponto; se contém números, +1 ponto; se contém caracteres especiais, +1 ponto; se contém letras maiúsculas, +1 ponto). Use a pontuação final para definir a largura (ex: 25%, 50%, 75%, 100%) e a cor da barra (vermelho, laranja, amarelo, verde).
 
 #### 29. Sorteador de Números com Limites Customizados
 Este exercício foca na manipulação do objeto matemático nativo do JavaScript e na validação lógica de intervalos numéricos.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie dois campos de entrada numérica: "Mínimo" e "Máximo". Adicione um botão "Sortear" e um elemento com texto grande para exibir o número sorteado.
+1. **Estrutura HTML (index.html)**: Crie dois campos de entrada numérica: "Mínimo" e "Máximo". Adicione um botão "Sortear" e um elemento com texto grande para exibir o número sorteado.
 
-**Estilização CSS (style.css)**: Centralize os elementos na página e use fontes grandes e chamativas para exibir o número resultante do sorteio.
+2. **Estilização CSS (style.css)**: Centralize os elementos na página e use fontes grandes e chamativas para exibir o número resultante do sorteio.
 
-**Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento ao botão. Capture os valores de mínimo e máximo, convertendo-os para números inteiros. Faça uma verificação para garantir que o valor máximo seja estritamente maior que o mínimo. Use funções matemáticas (como Math.random() e Math.floor()) para gerar um número inteiro aleatório que caia exatamente dentro do intervalo especificado pelo usuário e exiba-o no elemento de tela.
+3. **Funcionalidade JavaScript (script.js)**: Adicione um ouvinte de evento ao botão. Capture os valores de mínimo e máximo, convertendo-os para números inteiros. Faça uma verificação para garantir que o valor máximo seja estritamente maior que o mínimo. Use funções matemáticas (como `Math.random()` e `Math.floor()`) para gerar um número inteiro aleatório que caia exatamente dentro do intervalo especificado pelo usuário e exiba-o no elemento de tela.
 
 #### 30. Contador de Caracteres com Limite de Texto
 Este exercício trabalha com a propriedade de comprimento de strings e o bloqueio visual ou textual de envio quando limites são excedidos.
 
 Passos:
 
-**Estrutura HTML (index.html)**: Crie uma área de texto (<textarea>) para digitação livre. Abaixo dela, coloque um pequeno elemento de texto para mostrar o balanço de caracteres (ex: "0 / 280 caracteres") e um botão "Publicar".
+1. **Estrutura HTML (index.html)**: Crie uma área de texto (`<textarea>`) para digitação livre. Abaixo dela, coloque um pequeno elemento de texto para mostrar o balanço de caracteres (ex: "0 / 280 caracteres") e um botão "Publicar".
 
-**Estilização CSS (style.css)**: Estilize o contador de caracteres de forma discreta. Crie uma classe CSS especial (ex: cor vermelha) para ser aplicada quando o usuário estiver muito próximo do limite ou se ultrapassá-lo.
+2. **Estilização CSS (style.css)**: Estilize o contador de caracteres de forma discreta. Crie uma classe CSS especial (ex: cor vermelha) para ser aplicada quando o usuário estiver muito próximo do limite ou se ultrapassá-lo.
 
-**Funcionalidade JavaScript (script.js)**: Armazene o valor do limite máximo (ex: 280) em uma constante. Monitore as alterações da área de texto usando o evento input. A cada alteração, leia a propriedade .length do texto da área e atualize o elemento indicador na tela. Caso a contagem de caracteres ultrapasse o limite máximo estabelecido, adicione a classe visual vermelha ao texto do contador e desative o botão de publicação alterando sua propriedade .disabled.
+3. **Funcionalidade JavaScript (script.js)**: Armazene o valor do limite máximo (ex: 280) em uma constante. Monitore as alterações da área de texto usando o evento input. A cada alteração, leia a propriedade .length do texto da área e atualize o elemento indicador na tela. Caso a contagem de caracteres ultrapasse o limite máximo estabelecido, adicione a classe visual vermelha ao texto do contador e desative o botão de publicação alterando sua propriedade .disabled.
